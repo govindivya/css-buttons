@@ -1,0 +1,43 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  list-style: none;
+}
+a{
+    text-decoration:none;
+    padding: 15px 30px;
+    color: lightblue;
+    font-size: 18px;
+    letter-spacing: 3px;
+    border: 2px solid lightblue;
+    text-transform: uppercase;
+    position: relative;
+}
+.wave{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left:0;
+    top: 100%;
+    background-color: red;
+
+}
+.wave:before{
+    content: '';
+    position:absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 22px;
+    background: ;
+}

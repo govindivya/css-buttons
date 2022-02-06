@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transform-style: preserve-3d;
+}
+.outer {
+  position: relative;
+  top: 200px;
+  left: 300px;
+  min-width: 200px;
+  min-height: 50px;
+  max-width: 200px;
+  max-height: 50px;
+  background-color: transparent;
+  overflow: hidden;
+}
+.inner {
+  position: absolute;
+  top:0;
+  left:0;
+  height: 100%;
+  width: 100%;
+  transform-origin: bottom left;
+  transform: rotateZ(-90deg);
+  background-color: yellow;
+  transition:all 0.5s linear;
+}
+h1 {
+  position: absolute;
+  top:5px;
+  left:45px;
+  margin: auto auto;
+  color: blue;
+  z-index: 4;
+}
+
+.outer:hover .inner{
+    transform: rotateZ(0deg); 
+}

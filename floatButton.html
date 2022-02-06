@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../web/Website/fonts/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="./style1.css">
+</head>
+<body>
+    <h1>CSS buttons </h1>
+    <div class="button">
+        <i class="fab fa-facebook-f"></i>
+        <div class="blurred">
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <svg>
+        <defs>
+            <filter id='goo'>
+                <feGaussianBlur in='SourceGraphic'
+                stdDeviation='10' result='name'/>
+                <feColorMatrix in='name' mode='matrix'
+                 values='1 0 0 0 0
+                        0 1 0 0 0
+                        0 0 1 0 0
+                        0 0 0 30 -15'
+                        result='aab'/>
+                <feBlend in='SourceGraphic' in2='aab'/>
+            </filter>
+        </defs>
+    </svg>
+</body>
+</html>

@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transform-style: preserve-3d;
+}
+.outer {
+  position: relative;
+  top: 200px;
+  left: 300px;
+  min-width: 200px;
+  min-height: 50px;
+  max-width: 200px;
+  max-height: 50px;
+  background-color: transparent;
+  border: 1px solid black;
+  transition: all 0.3s linear;
+  overflow: hidden;
+}
+.inner {
+  position: absolute;
+  width: 100%;
+  height:100%;
+  top:-100%;
+  left:0;
+  border-radius:50%;
+  background-color: orange;
+  transition:all 0.4s linear;
+  overflow: hidden;
+}
+
+h1 {
+  position: absolute;
+  top: 5px;
+  left: 45px;
+  margin: auto auto;
+  color: blue;
+  z-index: 4;
+}
+
+.outer:hover .inner {
+    top:0;
+    border-radius: 0;
+}
